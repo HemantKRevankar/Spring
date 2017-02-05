@@ -3,5 +3,12 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
-	<bean id="triangle" class="com.hemant.spring.model.Triangle" />
+	<bean id="triangle" class="com.hemant.spring.model.Triangle">
+		<property name="type" value="Equilateral"></property>
+		<property name="height" value="5"></property>
+	</bean>
+	<bean id="isocelesTriangle" class="com.hemant.spring.model.Triangle">
+		<constructor-arg name="type" value="Isoceles" />
+		<constructor-arg name="height" value="7" />
+	</bean>
 </beans>
