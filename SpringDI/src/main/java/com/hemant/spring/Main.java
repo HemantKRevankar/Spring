@@ -12,10 +12,10 @@ public static void main(String[] args) {
 	//BeanFactory beanFactory = new XmlBeanFactory(new FileSystemResource("src/main/java/context.xml"));
 	ApplicationContext applicationContext = new ClassPathXmlApplicationContext("context.xml");
 	//Shape triangle = (Triangle) beanFactory.getBean("triangle");
-	Shape triangle = (Triangle) applicationContext.getBean("triangle");
+    Shape triangle = (Triangle) applicationContext.getBean("triangle");
 	triangle.draw();
 	
-	Shape isocelesTriangle = (Triangle) applicationContext.getBean("isocelesTriangle");
-	isocelesTriangle.draw();
+	/*Shape isocelesTriangle = (Triangle) applicationContext.getBean("isocelesTriangle");
+	isocelesTriangle.draw();*/
 }
 }
